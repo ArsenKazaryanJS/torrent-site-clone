@@ -1,0 +1,68 @@
+.header-container {
+  display: flex;
+  max-width: 1240px;
+  max-height: 120px;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+    button {
+      width: 160px;
+    }
+  }
+}
+
+.title-section {
+ display: flex;
+ flex-direction: column;
+}
+.title-section > .main-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 40px;
+  font-weight: 500;
+  border-left: none;
+  line-height: 1;
+  color: #353535;
+  margin: 0;
+}
+
+.subtitle {
+  border: none;
+  font-size: 15px;
+  color: #353535;
+  font-weight: 400;
+  line-height: 1.2;
+  max-width: 380px;
+}
+.title-section .highlight {
+  color: #7cc045;
+  font-weight: 400;
+  font-size: 40px;
+}
+.title-section .highlight:hover {
+  color: #2db6f5;
+}
+
+.btn.green {
+  background-color: #8bc34a;
+}
+
+.btn.green:hover {
+  background-color: rgb(151, 211, 81);
+}
+
+.btn.blue {
+  background-color: #0eacdd;
+}
+
+.btn.blue:hover {
+  background-color: #0ebbf0;
+}

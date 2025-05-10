@@ -1,0 +1,58 @@
+.searchbar-container {
+    background-color: #8bc34a;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .navimg img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-left: 290px;
+  }
+  .searchbar-box {
+    border: 1px solid #ffffff;
+    width: 300px;
+    border-radius: 9999px;
+    padding: 4px 12px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    margin:0 300px;
+
+  }
+  
+  .searchInp {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    i{
+      cursor: pointer;
+    }
+    
+  }
+  
+  .searchInp input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-style: italic;
+    font-size: 14px;
+    padding: 4px;
+    text-align: left;
+  }
+  
+  .searchInp input::placeholder {
+    color: #ffffff;
+  }
+  
+  .searchInp i {
+    color: white;
+    font-size: 16px;
+    margin-left: 8px;
+  }
+  

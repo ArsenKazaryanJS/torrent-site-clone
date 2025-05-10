@@ -1,0 +1,76 @@
+.auth_form_box {
+  position: absolute;
+  width: 300px;
+  right: 260px;
+  top: 60px;
+  background-color: white;
+  border-top: solid 5px rgb(36, 173, 36);
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 20px;
+  form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    input {
+      background: white;
+      border: 3px solid rgba(241, 43, 36, 0.507);
+      outline: none;
+      padding: 10px 3px 10px 3px;
+    }
+
+    a{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: black;
+        svg{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+  }
+}
+
+.login_btn {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+
+  button {
+    background: #8bc34a;
+    color: white;
+    border: none;
+    border-bottom: 0px solid rgba(241, 43, 36, 0.7);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 56px;
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 8px;
+    padding: 0 25px;
+    letter-spacing: 1px;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    background-color: #597e2e;
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  input {
+    height: 17px;
+    width: 17px;
+  }
+  label {
+    padding-bottom: 5px;
+  }
+}

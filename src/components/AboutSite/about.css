@@ -1,0 +1,15 @@
+.about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+text-align: center;
+align-items: center;
+    
+}
+
+.about-site_link{
+    width: 100%;
+    text-align: start;
+    text-decoration: underline;
+    font-size: 20px;
+}
