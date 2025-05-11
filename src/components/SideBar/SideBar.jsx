@@ -10,15 +10,16 @@ const SideBar = () => {
       </div>
       <div className="buttons">
       {
-        categories.slice(0,3).map((el)=> <button>{el}</button>)
+        categories.slice(0,3).map((el,index)=> <button key={index}>{el}</button>)
       }
       </div>
       <h3>Категории</h3>
       <div className="categories">
         {
-          categories.slice(3,categories.length).map((el)=> <button>{el}</button>)
+          categories.slice(3,categories.length).map((el,index)=> <button key={index}>{el}</button>)
         }
       </div>
+      
     </div>
   );
 };

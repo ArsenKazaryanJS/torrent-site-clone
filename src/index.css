@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(---light_backgraund);
+  background-color: var(---backgraund);
     -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -13,10 +13,23 @@ body {
 }
 
 :root{
-  ---light_backgraund:#f5f5f5;
-  ---dark_backgraund:#313843;
-  ---light_text_color:#4f4b45;
-  ---dark_text_color:rgb(188, 182, 172);
+  ---backgraund:#f5f5f5;
+   ---light-backgraund:#8bc34a;
+  --title-color:#7cc045;
+  ---btn-hover:#7cc045af;
+  ---text_color:#4f4b45;
+   ---text-backgraund:white;
+   ---all-btn-backgraund:rgb(139, 195, 74);
+}
+
+html[data-theme='dark']{
+  ---backgraund:#313843;
+  ---text_color:rgb(188, 182, 172);
+  ---text-backgraund:#292f39;
+   ---all-btn-backgraund:rgb(61, 161, 28);
+  ---light-backgraund:#363f4b;
+  ---btn-hover:#363f4ba2;
+  --title-color:#2db6f5;
 }
 img{
   width: 100%;

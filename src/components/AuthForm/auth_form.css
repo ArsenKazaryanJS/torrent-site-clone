@@ -3,7 +3,7 @@
   width: 300px;
   right: 260px;
   top: 60px;
-  background-color: white;
+  background-color: var(---text-backgraund);
   border-top: solid 5px rgb(36, 173, 36);
   border-radius: 2px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -12,7 +12,9 @@
     display: flex;
     gap: 10px;
     flex-direction: column;
-
+    label {
+      color: var(---text_color);
+    }
     input {
       background: white;
       border: 3px solid rgba(241, 43, 36, 0.507);
@@ -20,18 +22,19 @@
       padding: 10px 3px 10px 3px;
     }
 
-    a{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: black;
-        svg{
-            width: 20px;
-            height: 20px;
-        }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(---text_color);
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
     }
-    a:hover{
-        text-decoration: underline;
+    a:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -43,7 +46,7 @@
   align-items: center;
 
   button {
-    background: #8bc34a;
+    background: var( ---light-backgraund);
     color: white;
     border: none;
     border-bottom: 0px solid rgba(241, 43, 36, 0.7);
@@ -72,5 +75,6 @@
   }
   label {
     padding-bottom: 5px;
+    color: var(---text_color);
   }
 }

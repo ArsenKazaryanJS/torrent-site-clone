@@ -4,12 +4,14 @@ import { Link } from "react-router-dom";
 import Moon from "../../img/moon.webp";
 import Sun from "../../img/sun.webp";
 import User from "../../img/prof_default.webp";
-
 import "./nav_bar.css";
 import { AuthForm } from "../AuthForm/AuthForm";
+import { useTheme } from "../../hooks/useTheme";
 
 export const NavBar = () => {
 const [popUp, setPopUp] = useState(false);
+const {theme,toggleTheme} = useTheme()
+
 
   return (
     <nav className="nav_content">
@@ -29,11 +31,12 @@ const [popUp, setPopUp] = useState(false);
         </div>
 
         <div className="nav_right">
-          <img src={Sun} />
+          <img src={!theme ? Sun : Moon} onClick={()=> toggleTheme()} />
           <div className="auth_click" onClick={()=>setPopUp(!popUp)}>
             <p>Войти</p>
             <p>Регистрация</p>
           </div>
+          
           <img src={User} alt="" />
         </div>
       </div>
